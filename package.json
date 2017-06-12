@@ -1,0 +1,28 @@
+{
+  "name": "mean-todo-app",
+  "version": "1.0.0",
+  "description": "MEAN Todo App",
+  "main": "app.js",
+  "scripts": {
+    "watch": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itaouil95/MEAN-Todo-App.git"
+  },
+  "author": "Ilyass",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itaouil95/MEAN-Todo-App/issues"
+  },
+  "homepage": "https://github.com/itaouil95/MEAN-Todo-App#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.6",
+    "express": "^4.15.3",
+    "mongojs": "^2.4.0",
+    "morgan": "^1.8.2",
+    "path": "^0.12.7"
+  }
+}
