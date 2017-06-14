@@ -1,0 +1,26 @@
+{
+  "name": "mean-todo-app",
+  "description": "MEAN Todo App",
+  "main": "app.js",
+  "authors": [
+    "Ilyass"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "Angular2",
+    "Node",
+    "Mongo",
+    "ExpressJS"
+  ],
+  "homepage": "https://github.com/itaouil95/MEAN-Todo-App",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
