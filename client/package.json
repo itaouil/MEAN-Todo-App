@@ -1,7 +1,7 @@
 {
-  "name": "mean-todo-app",
+  "name": "angular-quickstart",
   "version": "1.0.0",
-  "description": "Angular Client MEAND Todo.",
+  "description": "QuickStart package.json from the documentation, supplemented with testing support",
   "scripts": {
     "build": "tsc -p src/",
     "build:watch": "tsc -p src/ -w",

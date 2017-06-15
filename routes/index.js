@@ -4,7 +4,7 @@ const router  = express.Router();
 
 // GET Homepage
 router.get('/', (req, res) => {
-  res.render('index.html');
+  res.sendFile('/Users/dailand10/Desktop/MEAN-Todo-App/client/src/index.html');
 });
 
 // Export router

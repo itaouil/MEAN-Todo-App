@@ -23,3 +23,7 @@ We start by setting a mongodb on the clound using MLAB (free package), creating 
 The following step is to set up the routes of the API (database layer + backend) that our client (Angular) is going to consume during the interaction with the user. We set up the database connection by using the mongojs module for each route (add, update, get todos) we use the realative method offered by the module.
 
 3. **Set Up Client**
+
+Setting Up Angular2 wasn't that straight forward at first glance, but it was the next step. This task was just a matter of copying and pasting the quickstart files such as tsconfig.js etc and paste them in the client folder I created in the folder structure. Moreover, I installed bower (client side package manager) by which I installed jquery and bootstrap, this is makes more reliable than actually using CDN's.
+
+4 **User Interface**
