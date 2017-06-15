@@ -26,4 +26,8 @@ The following step is to set up the routes of the API (database layer + backend)
 
 Setting Up Angular2 wasn't that straight forward at first glance, but it was the next step. This task was just a matter of copying and pasting the quickstart files such as tsconfig.js etc and paste them in the client folder I created in the folder structure. Moreover, I installed bower (client side package manager) by which I installed jquery and bootstrap, this is makes more reliable than actually using CDN's.
 
-4 **User Interface**
+4. **User Interface**
+
+I proceeded by cloning the Angular2 quickstart repo and literally copying all of the configuration files the root of our structure under the client folder. I then moved the index.html into my views folder (set up on step 1) and changed the references to the .js, .css files import to match our structure. Afterwards I had to change the systemjs.config.js to avoid 404 Not Found errors.
+
+5. **Services**
