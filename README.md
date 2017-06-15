@@ -37,3 +37,9 @@ This one of the most interesting parts. We leave the world of bootstrap and user
 We create a *services* folder and we create out *todo.service.ts* where we include our **Injectable** module (for dependency injection) and we define our constructor that takes in an HTTP module instance and defines a method that makes the call to the API and returns a response.
 
 We do create as well a commons structure that holds our response attributes, again for modularity and re-usability purposes.
+
+6. **Add Todo**
+
+Add method in service that consume API built, add method in todo component that on click event calls method in the class that itself calls the service method.
+
+Add element to UI and clear storage.

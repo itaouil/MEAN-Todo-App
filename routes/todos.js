@@ -37,7 +37,7 @@ router.post('/todo', (req, res) => {
   var todo = req.body;
 
   // Save a document in the collection
-  if (todo.text && todo.isCompleted) {
+  if (todo.text.trim() != "" && todo.isCompleted != undefined) {
     db.todos.save(todo, (err, result) => {
       if (err) res.status(400).send(err);
       else res.json(result);
