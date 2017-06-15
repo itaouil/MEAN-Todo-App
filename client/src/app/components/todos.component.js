@@ -22,6 +22,21 @@ var TodosComponent = (function () {
             .map(function (res) { return res.json(); })
             .subscribe(function (todos) { return _this.todos = todos; });
     };
+    TodosComponent.prototype.addTodo = function ($event, todoText) {
+        var _this = this;
+        if ($event.which === 1) {
+            var result;
+            var newTodo = {
+                text: todoText.value,
+                isCompleted: false
+            };
+            result = this._todoService.saveTodo(newTodo);
+            result.subscribe(function (x) {
+                _this.todos.push(newTodo);
+                todoText.value = "";
+            });
+        }
+    };
     return TodosComponent;
 }());
 TodosComponent = __decorate([

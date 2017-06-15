@@ -31,3 +31,9 @@ Setting Up Angular2 wasn't that straight forward at first glance, but it was the
 I proceeded by cloning the Angular2 quickstart repo and literally copying all of the configuration files the root of our structure under the client folder. I then moved the index.html into my views folder (set up on step 1) and changed the references to the .js, .css files import to match our structure. Afterwards I had to change the systemjs.config.js to avoid 404 Not Found errors.
 
 5. **Services**
+
+This one of the most interesting parts. We leave the world of bootstrap and user interface and we dive deeper into Angular2 world. A service is a class whose main task is to offer data actions (consuming API's, reading CSV, etc) in a modular manner such that it can be re-used between the many components we might have in our app.
+
+We create a *services* folder and we create out *todo.service.ts* where we include our **Injectable** module (for dependency injection) and we define our constructor that takes in an HTTP module instance and defines a method that makes the call to the API and returns a response.
+
+We do create as well a commons structure that holds our response attributes, again for modularity and re-usability purposes.
