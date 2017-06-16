@@ -25,7 +25,6 @@ var TodosComponent = (function () {
     TodosComponent.prototype.addTodo = function ($event, todoText) {
         var _this = this;
         if ($event.which === 1) {
-            console.log(todoText.value);
             var result;
             var newTodo = {
                 text: todoText.value,

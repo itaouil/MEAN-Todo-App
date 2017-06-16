@@ -8,6 +8,9 @@ A Mongo, Express, Angular, Node TODO application. The technology stack is visibl
 3. Angular is Angular 2.
 4. Node is version 8, so I am using/trying ES6.
 
+## **Pic**
+
+
 ## **Development Process**
 
 1. **Basic Structure**
@@ -47,3 +50,7 @@ Add element to UI and clear storage.
 7. **Edit Todo**
 
 This has been by most the most exciting part, as not only we had to create a new service method, but we got to play around with Angular2 directives like ```[class.disable]``` and ```[class.hidden]```, which has been pretty cool. Just a side note that ```[class.hidden]``` differently from ```ngIf``` only plays around with the display property in CSS and **DOES NOT** remove the element from the DOM.
+
+8. **Delete Todo**
+
+Give a call to the API, subscribe to the call and delete todo from array.

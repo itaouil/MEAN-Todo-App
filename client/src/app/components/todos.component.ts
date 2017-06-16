@@ -24,7 +24,6 @@ export class TodosComponent implements OnInit {
 
   addTodo($event, todoText) {
     if ($event.which === 1) {
-      console.log(todoText.value);
       var result;
       var newTodo = {
         text: todoText.value,
