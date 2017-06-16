@@ -38,6 +38,42 @@ var TodosComponent = (function () {
             });
         }
     };
+    TodosComponent.prototype.updateTodoText = function ($event, todo) {
+        var _this = this;
+        if ($event.which === 13) {
+            todo.text = $event.target.value;
+            var _todo = {
+                _id: todo._id,
+                text: todo.text,
+                isCompleted: todo.isCompleted
+            };
+            this._todoService.updateTodo(_todo)
+                .map(function (res) { return res.json(); })
+                .subscribe(function (data) {
+                _this.setEditState(todo, false);
+            });
+        }
+    };
+    TodosComponent.prototype.updateTodoStatus = function (todo) {
+        var _todo = {
+            _id: todo._id,
+            text: todo.text,
+            isCompleted: !todo.isCompleted
+        };
+        this._todoService.updateTodo(_todo)
+            .map(function (res) { return res.json(); })
+            .subscribe(function (data) {
+            todo.isCompleted = !todo.isCompleted;
+        });
+    };
+    TodosComponent.prototype.setEditState = function (todo, state) {
+        if (state) {
+            todo.isEditMode = state;
+        }
+        else {
+            delete todo.isEditMode;
+        }
+    };
     return TodosComponent;
 }());
 TodosComponent = __decorate([
