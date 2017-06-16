@@ -70,6 +70,22 @@ export class TodosComponent implements OnInit {
       });
   }
 
+  deleteTodo(id) {
+    var todos = this.todos;
+
+    this._todoService.deleteTodo(id)
+      .map(res => res.json())
+      .subscribe(data => {
+        if (data.n == 1) {
+          for (var i = 0; i < todos.length; i++) {
+            if (todos[i]._id == id) {
+              todos.splice(i, 1);
+            }
+          }
+        }
+      });
+  }
+
   setEditState(todo, state) {
     if (state) {
       todo.isEditMode = state;

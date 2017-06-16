@@ -29,6 +29,9 @@ var TodoService = (function () {
         headers.append('Content-Type', 'application/json');
         return this._http.put('/api/v1/todo/' + todo._id, JSON.stringify(todo), { headers: headers });
     };
+    TodoService.prototype.deleteTodo = function (id) {
+        return this._http.delete('/api/v1/todo/' + id);
+    };
     return TodoService;
 }());
 TodoService = __decorate([

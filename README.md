@@ -43,3 +43,7 @@ We do create as well a commons structure that holds our response attributes, aga
 Add method in service that consume API built, add method in todo component that on click event calls method in the class that itself calls the service method.
 
 Add element to UI and clear storage.
+
+7. **Edit Todo**
+
+This has been by most the most exciting part, as not only we had to create a new service method, but we got to play around with Angular2 directives like ```[class.disable]``` and ```[class.hidden]```, which has been pretty cool. Just a side note that ```[class.hidden]``` differently from ```ngIf``` only plays around with the display property in CSS and **DOES NOT** remove the element from the DOM.

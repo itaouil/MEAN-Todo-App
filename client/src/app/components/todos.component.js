@@ -66,6 +66,20 @@ var TodosComponent = (function () {
             todo.isCompleted = !todo.isCompleted;
         });
     };
+    TodosComponent.prototype.deleteTodo = function (id) {
+        var todos = this.todos;
+        this._todoService.deleteTodo(id)
+            .map(function (res) { return res.json(); })
+            .subscribe(function (data) {
+            if (data.n == 1) {
+                for (var i = 0; i < todos.length; i++) {
+                    if (todos[i]._id == id) {
+                        todos.splice(i, 1);
+                    }
+                }
+            }
+        });
+    };
     TodosComponent.prototype.setEditState = function (todo, state) {
         if (state) {
             todo.isEditMode = state;
