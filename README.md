@@ -9,7 +9,7 @@ A Mongo, Express, Angular, Node TODO application. The technology stack is visibl
 4. Node is version 8, so I am using/trying ES6.
 
 ## **Pic**
-
+![alt] (https://github.com/itaouil95/MEAN-Todo-App/blob/master/todo.png)
 
 ## **Development Process**
 
